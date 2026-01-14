@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, User } from "lucide-react";
 
-const ProfileMenu = () => {
+const ProfileMenu = ({ handleLogout }) => {
     const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
     const menuRef = useRef(null);
     useEffect(() => {
@@ -19,16 +19,6 @@ const ProfileMenu = () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
-
-    const handleLogout = async () => {
-        try {
-            await fetch('/api/logout', { method: 'POST' });
-            window.location.href = '/login';
-        } catch (error) {
-            console.error('Logout error:', error);
-            window.location.href = '/login';
-        }
-    };
 
     return (
         <div ref={menuRef} className="relative">
@@ -51,6 +41,16 @@ const Navbar = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const pathname = usePathname();
+
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/logout', { method: 'POST' });
+      window.location.href = '/login';
+    } catch (error) {
+      console.error('Logout error:', error);
+      window.location.href = '/login';
+    }
+  };
 
   useEffect(() => {
     const checkAuthStatus = async () => {
@@ -88,7 +88,7 @@ const Navbar = () => {
       return <div className="h-10 w-20 rounded-md bg-zinc-800 animate-pulse"></div>;
     }
     if (isLoggedIn) {
-      return <ProfileMenu />;
+      return <ProfileMenu handleLogout={handleLogout} />;
     }
     return (
       <Link href="/login" className="px-4 py-2 rounded-md text-md font-bold text-zinc-950 bg-lime-400 hover:bg-lime-300">
@@ -157,12 +157,11 @@ const Navbar = () => {
               );
             })}
             
-            {/* NEW: Separator and Login/Logout for Mobile Menu */}
             <li className="w-full pt-4 mt-4 border-t border-zinc-700">
               {isLoggedIn ? (
                   <div className="flex flex-col gap-4 text-center">
-                    
-                      <Link href="/logout" onClick={handleLinkClick} className="text-xl font-semibold text-zinc-200">Logout</Link>
+                    <button onClick={() => { setIsMenuOpen(false); handleLogout(); }} 
+                    className="text-xl font-semibold text-zinc-200">Logout</button>
                   </div>
               ) : (
                 <Link href="/login" onClick={handleLinkClick} className="block w-full py-3 rounded-lg text-xl font-bold bg-lime-400 text-zinc-950 text-center">
