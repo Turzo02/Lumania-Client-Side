@@ -72,6 +72,50 @@ const Navbar = () => {
     };
 
     checkAuthStatus();
+
+    const handleLoginSuccess = () => {
+      setIsLoggedIn(true);
+      setIsLoading(false);
+    };
+
+    window.addEventListener('loginSuccess', handleLoginSuccess);
+
+    return () => {
+      window.removeEventListener('loginSuccess', handleLoginSuccess);
+    };
+  }, []);
+
+  useEffect(() => {
+    const checkAuthStatus = async () => {
+      try {
+        const response = await fetch('/api/auth/status');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        setIsLoggedIn(data.isLoggedIn);
+      } catch (error) {
+        console.error('Auth check error:', error);
+        setIsLoggedIn(false);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkAuthStatus();
+
+    const handleLoginSuccess = () => {
+      setIsLoggedIn(true);
+      setIsLoading(false);
+    };
+
+    window.addEventListener('loginSuccess', handleLoginSuccess);
+
+    return () => {
+      window.removeEventListener('loginSuccess', handleLoginSuccess);
+    };
   }, [pathname]);
 
   const handleLinkClick = () => setIsMenuOpen(false);
@@ -127,7 +171,7 @@ const Navbar = () => {
         </nav>
       </header>
       
-      {/* ... Mobile menu would also use renderAuthButton() ... */}      <div
+      <div
         className={`
           md:hidden fixed inset-0 z-40
           bg-[#0A0A0A]/95

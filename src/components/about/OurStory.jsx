@@ -7,8 +7,7 @@ const OurStory = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24">
           
-          {/* Image - Placed first for better mobile layout (image on top) */}
-          <div className="order-last lg:order-first h-96 w-full lg:h-[500px] rounded-lg overflow-hidden">
+          <div className="order-last lg:order-first h-96 w-full lg:h-125 rounded-lg overflow-hidden">
              <Image
                 src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&q=80&w=800"
                 alt="A workshop with glowing light bulbs"
@@ -18,7 +17,6 @@ const OurStory = () => {
               />
           </div>
 
-          {/* Text Content */}
           <div className="text-left">
             <h2 className="text-sm font-semibold uppercase tracking-wider text-lime-400">Our Story</h2>
             <p className="mt-4 text-3xl font-bold tracking-tighter text-zinc-200 sm:text-4xl">

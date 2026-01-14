@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Gem, Leaf } from 'lucide-react'; // Icons representing values
+import { ShieldCheck, Gem, Leaf } from 'lucide-react';
 
 const commitments = [
   {

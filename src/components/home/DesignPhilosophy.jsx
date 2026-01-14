@@ -8,7 +8,6 @@ const DesignPhilosophy = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-24">
           
-          {/* Text Content */}
           <div className="text-left">
             <h2 className="text-3xl font-bold tracking-tighter text-zinc-200 sm:text-4xl">
               Where Form Meets Function
@@ -34,7 +33,6 @@ const DesignPhilosophy = () => {
             </div>
           </div>
 
-          {/* Image */}
           <div className="h-96 w-full lg:h-125 rounded-lg overflow-hidden">
              <Image
                 src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800"

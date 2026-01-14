@@ -14,6 +14,12 @@ const LoginPage = () => {
     setPassword(process.env.NEXT_PUBLIC_ADMIN_PASSWORD || 'password123');
   };
 
+  const handleLoginSuccess = () => {
+    router.push('/');
+    router.refresh();
+    window.dispatchEvent(new CustomEvent('loginSuccess'));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -28,8 +34,7 @@ const LoginPage = () => {
       });
 
       if (response.ok) {
-        router.push('/');
-        router.refresh();
+        handleLoginSuccess();
       } else {
         const data = await response.json();
         setError(data.message || 'Invalid credentials.');

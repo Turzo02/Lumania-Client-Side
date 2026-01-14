@@ -19,7 +19,6 @@ const ItemDetailsPage = async ({ params }) => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
           
-          {/* Left Column: Image Gallery */}
           <div className="flex items-start justify-center">
             <div className="relative h-96 w-full lg:h-125 rounded-lg overflow-hidden border border-zinc-800">
               <Image
@@ -33,7 +32,6 @@ const ItemDetailsPage = async ({ params }) => {
             </div>
           </div>
 
-          {/* Right Column: Product Details */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-lime-400">
               {item.category}
@@ -61,7 +59,6 @@ const ItemDetailsPage = async ({ params }) => {
               </button>
             </div>
 
-            {/* Specifications Section */}
             <div className="mt-12 pt-8 border-t border-zinc-800">
               <h2 className="text-xl font-semibold text-zinc-200">Specifications</h2>
               <dl className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">

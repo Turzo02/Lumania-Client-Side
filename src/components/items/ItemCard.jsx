@@ -6,7 +6,6 @@ import { ArrowUpRight } from "lucide-react";
 const ItemCard = ({ item }) => {
   return (
     <div className="flex flex-col bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 h-full">
-      {/* Image Container */}
       <div className="relative h-64 w-full bg-zinc-900">
         {item.imageUrl ? (
           <Image
@@ -23,13 +22,12 @@ const ItemCard = ({ item }) => {
           </div>
         )}
       </div>
-      {/* Content Container */}
       <div className="flex flex-col p-6 grow">
         <p className="text-sm font-medium text-zinc-400">{item.category}</p>
         <h3 className="mt-1 text-xl font-semibold text-zinc-200">
           {item.name}
         </h3>
-        <div className="mt-4 grow" /> {/* Spacer */}
+        <div className="mt-4 grow" />
         <div className="flex items-center justify-between mt-4">
           <p className="text-2xl font-bold text-lime-400">
             ${item.price.toFixed(2)}

@@ -10,6 +10,7 @@ export async function GET(request) {
     
     return NextResponse.json({ isLoggedIn: false });
   } catch (error) {
+    console.error('Auth status error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
