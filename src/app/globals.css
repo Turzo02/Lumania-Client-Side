@@ -2,16 +2,3 @@
 
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-/* 2. Define theme-specific colors using CSS variables */
-@theme {
-  --color-app-bg: var(--bg-primary);
-}
-
-[data-theme="light"] {
-  --bg-primary: red;  /*example*/
-}
-
-[data-theme="dark"] {
-  --bg-primary: green; /*example*/
-
-}
