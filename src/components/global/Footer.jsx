@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className="bg-[#27272a]">
       {" "}
       {/* Abyss Black Background */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-0 py-12">
+      <div className="mx-auto max-w-7xl px-6 lg:px-4 py-12">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           {/* Logo */}
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium flex-1">
+          <ul className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-sm font-medium flex-1">
             {footerNavLinks.map((link) => (
               <li key={link.name}>
                 <Link

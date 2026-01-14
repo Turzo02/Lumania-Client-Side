@@ -37,11 +37,12 @@ const DesignPhilosophy = () => {
           {/* Image */}
           <div className="h-96 w-full lg:h-125 rounded-lg overflow-hidden">
              <Image
-                src="https://images.unsplash.com/photo-1617300322198-a8c962c5a2aa?auto=format&fit=crop&q=80&w=800"
+                src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800"
                 alt="Stylized light fixture in a modern room"
                 width={800}
                 height={1000}
                 className="h-full w-full object-cover"
+                loading='eager'
               />
           </div>
         </div>
