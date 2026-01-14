@@ -5,7 +5,7 @@
     "category": "Ceiling",
     "price": 249.99,
     "rating": 4.8,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/pendent.png",
     "description": "A gravity-defying suspended light featuring a brushed brass ring and a hand-blown opal glass sphere. Its minimalist design makes it a perfect focal point for modern dining spaces or entryways, providing a warm and diffuse glow.",
     "specs": {
       "material": "Brushed Brass, Opal Glass",
@@ -22,7 +22,7 @@
     "category": "Table",
     "price": 89.00,
     "rating": 4.5,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/desk-lamp.png",
     "description": "Minimalist task lighting constructed from a single piece of bent matte black aluminum. Features a touch-sensitive base with three-step dimming control, offering focused, glare-free light perfect for any workspace or bedside table.",
     "specs": {
       "material": "Powder-coated Aluminum",
@@ -39,7 +39,7 @@
     "category": "Wall",
     "price": 129.50,
     "rating": 4.9,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/wall-sconce.png",
     "description": "A wall-mounted ambient light that mimics a solar eclipse. The backlit LED design casts a soft, indirect halo effect, creating a serene and atmospheric glow. Ideal for hallways, living rooms, or as a piece of sculptural wall art.",
     "specs": {
       "material": "Cast Concrete, Steel",
@@ -56,7 +56,7 @@
     "category": "Floor",
     "price": 350.00,
     "rating": 4.7,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/floor-lamp.png",
     "description": "An architectural floor lamp with a slender, monolithic profile. The integrated LED strip is recessed within the carbon fiber frame, providing a powerful yet glare-free column of indirect light to illuminate any corner.",
     "specs": {
       "material": "Carbon Fiber, Weighted Steel Base",
@@ -73,7 +73,7 @@
     "category": "Ceiling",
     "price": 799.00,
     "rating": 4.9,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/aether-chandelier.png",
     "description": "A statement chandelier composed of twelve hand-blown glass shards suspended from a central matte black canopy. Each shard catches and refracts light differently, creating a dynamic, sparkling effect ideal for grand foyers or above large dining tables.",
     "specs": {
       "material": "Smoked Glass, Matte Black Steel",
@@ -90,7 +90,7 @@
     "category": "Table",
     "price": 110.00,
     "rating": 4.6,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/table-lamp.png",
     "description": "A brutalist-inspired table lamp carved from a solid block of grey concrete. The exposed Edison bulb provides a raw, industrial aesthetic, while the concrete base remains cool to the touch. A perfect accent for shelves or sideboards.",
     "specs": {
       "material": "Polished Concrete",
@@ -107,7 +107,7 @@
     "category": "Wall",
     "price": 180.00,
     "rating": 4.7,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/beam-wall-light.png",
     "description": "The ultimate in minimalism. A single, solid beam of anodized aluminum that can be mounted horizontally or vertically. It casts a wide, even wash of light, perfect for illuminating artwork or as a modern vanity light.",
     "specs": {
       "material": "Anodized Aluminum",
@@ -124,7 +124,7 @@
     "category": "Table",
     "price": 125.00,
     "rating": 4.8,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/carry-lamp.png",
     "description": "A portable, rechargeable LED lamp designed to go wherever you do. With a durable aluminum handle and a dimmable, frosted glass dome, it provides up to 8 hours of continuous, warm light, perfect for evenings on the patio or as a movable night light.",
     "specs": {
       "material": "Aluminum, Frosted Polycarbonate",
@@ -141,7 +141,7 @@
     "category": "Ceiling",
     "price": 450.00,
     "rating": 4.7,
-    "imageUrl": "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80&w=800",
+    "imageUrl": "/image/axis-rack_System.png",
     "description": "A modular track lighting system for the ultimate in flexibility. The kit includes a 2-meter track and three adjustable spotlights that can be positioned anywhere along the rail. Perfect for kitchens, galleries, and retail spaces.",
     "specs": {
       "material": "Matte Black Aluminum",
